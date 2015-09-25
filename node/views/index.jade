@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    link(rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap-theme.css")
+    link(rel="stylesheet" type="text/css" href="css/style.css") 
+  body
+    nav.navbar.navbar-default
+      .container-fluid
+        
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Brand
+        
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#')
+                | Profile
+                span.sr-only (current)
+            li
+              a(href='#') News/Updates
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Logout
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Options 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider(role='separator')
+                li
+                  a(href='#') Separated link
+        
+    .container
+    .row
+        a.thumbnail(href='#')
+          img(src='images/teacher.png', alt='', small)
+          h2 #{name}
+      p Username: #{user}
+      p Website: #{web}
+      p Twitter: #{twitter}
+      p Bio: #{bio}
+
+    script(src='vendor/jquery/dist/jquery.js')
+    script(src='vendor/bootstrap/dist/js/bootstrap.js')

@@ -1,0 +1,32 @@
+a.thumbnail img {
+    float: left;
+    margin-right: 10px;
+    height: 120px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+a.thumbnail {
+    margin-left: 100px;
+    margin-right: 1500px;
+    border-style: none;
+    box-shadow: 0;
+    border-radius: 0;
+    background-color:transparent!important;
+    border:none!important;
+    margin-top: 10px;
+}
+
+html body p {
+    margin-left: 250px;
+    font-size: 20px;
+}
+
+div.row {
+    margin-bottom: 10px;
+}
+
+a.thumbnail h2 {
+    font-size: 40px;
+    color: #0a0a0a;
+}
